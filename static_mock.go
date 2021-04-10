@@ -19,6 +19,8 @@ func init() {
 	sql.Register("sqlite3", &SQLiteDriver{})
 }
 
+var SQLiteTimestampFormats []string
+
 type (
 	SQLiteDriver struct {
 		Extensions  []string
